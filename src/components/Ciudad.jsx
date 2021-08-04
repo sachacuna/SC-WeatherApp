@@ -10,22 +10,22 @@ export default function Ciudad({ city }) {
       <div className="container">
         <h2 className="titulo"><b>{city.name}</b>, {city.country}</h2>
         <div className="info">
-          <div><b>Temperature</b>: {Math.round(city.temp-273.15)} ºC</div>
-          <div><b>Feels Like</b>: {Math.round(city.feels-273.15)} ºC</div> 
-          <div><b>Weather</b>: {city.weather}</div>
-          <div><b>Wind</b>: {city.wind} km/h</div>
-          <div><b>Clouds</b>: {city.clouds}% </div>
-          <div><b>Latitude</b>: {city.latitud}º</div>
-          <div><b>Longitude</b>: {city.longitud}º</div>
-          <div><b>Humidity</b>: {city.humidity}%</div>
-          <div><b>Visibility</b>: {city.visibility/100}%</div>
+          <h4><b>Temperature</b>: {Math.round(city.temp-273.15)} ºC</h4>
+          <h4><b>Feels Like</b>: {Math.round(city.feels-273.15)} ºC</h4> 
+          <h4><b>Weather</b>: {city.weather}</h4>
+          <h4><b>Wind</b>: {city.wind} km/h</h4>
+          <h4><b>Clouds</b>: {city.clouds}% </h4>
+          <h4><b>Latitude</b>: {city.latitud}º</h4>
+          <h4><b>Longitude</b>: {city.longitud}º</h4>
+          <h4><b>Humidity</b>: {city.humidity}%</h4>
+          <h4><b>Visibility</b>: {city.visibility/100}%</h4>
         </div>
         <div> 
-          <b>Sunrise:</b> {`${sunrise.getHours()}:${sunrise.getMinutes()} h`}{" "}
-          UTC
+          <h4><b>Sunrise</b>: {`${sunrise.getHours()}:${sunrise.getMinutes()} h`}{" "}
+          UTC</h4>
         </div>
         <div>
-          <b>Sunset:</b> {`${sunset.getHours()}:${sunset.getMinutes()} h`} UTC
+          <h4><b>Sunset</b>: {`${sunset.getHours()}:${sunset.getMinutes()} h`} UTC</h4>
         </div>
         <div>
               <img

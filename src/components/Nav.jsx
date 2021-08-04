@@ -16,12 +16,16 @@ function Nav({ onSearch }) {
           className="d-inline-block align-top"
           alt="SC logo"
         />
-        <span className="navbar-brand">CHECK THE WEATHER</span>
+        <span className="navbar-brand">
+          <b>CHECK THE WEATHER</b>
+        </span>
+      </Link>
+      <Link to="/About">
+        <span className="navbar-brand">
+          <b>About</b>
+        </span>
       </Link>
       <SearchBar onSearch={onSearch} />
-      <Link to="/About">
-        <span className="navbar-brand">About</span>
-      </Link>
     </nav>
   );
 }

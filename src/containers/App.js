@@ -4,7 +4,7 @@ import Nav from "../components/Nav.jsx";
 import Cards from "../components/Cards.jsx";
 import About from "../components/About.jsx";
 import Ciudad from "../components/Ciudad.jsx";
-import Footer from "../components/Footer";
+//import Footer from "../components/Footer";
 import { Route } from "react-router-dom";
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
@@ -79,7 +79,7 @@ function App() {
           <Ciudad city={onFilter(match.params.ciudadId)} />
         )}
       />
-      <Route path="/" component={Footer} />
+      {/* <Route path="/" component={Footer} /> */}
     </div>
   );
 }
