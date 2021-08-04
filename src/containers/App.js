@@ -6,6 +6,7 @@ import About from "../components/About.jsx";
 import Ciudad from "../components/Ciudad.jsx";
 //import Footer from "../components/Footer";
 import { Route } from "react-router-dom";
+import swal from "sweetalert";
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
 
@@ -29,7 +30,7 @@ function App() {
                 img: recurso.weather[0].icon,
                 id: recurso.id,
                 wind: recurso.wind.speed,
-                temp: recurso.main.temp, 
+                temp: recurso.main.temp,
                 name: recurso.name,
                 weather: recurso.weather[0].main,
                 clouds: recurso.clouds.all,
@@ -45,13 +46,19 @@ function App() {
               };
               setCities((oldCities) => [...oldCities, ciudad]);
             } else {
-              alert("We can't find this city");
+              swal("Sorry, we couldn't find this city. Try again",{
+                buttons: false,
+                timer: 1500,
+              });
             }
           } else {
-            alert("This city is already added, try another");
+            swal("This city is already added, try another", {
+              buttons: false,
+              timer: 1500,
+            });
           }
         } else {
-          alert("You have reached the limit of cities to show");
+          swal("Oops!","You have reached the limit of cities to show (15)","error");
         }
       });
   }
