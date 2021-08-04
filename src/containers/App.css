@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background: url(https://www.jetsetter.com//uploads/sites/7/2019/10/Northern-Lights_Churchill-Two-143_Credit-Travel-Manitoba.jpg);
+  background-attachment: fixed;
+  overflow: scroll;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}

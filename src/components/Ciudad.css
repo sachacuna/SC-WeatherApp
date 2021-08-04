@@ -1,0 +1,18 @@
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulo {
+margin-top: 20px;
+margin-bottom: 15px;
+font-weight: 630;
+color:#7edb9d;
+font-size: 25px;
+text-shadow:#0C070B 2px 3px 3px;
+}
+
+.iconDetail {
+filter:drop-shadow(12px 10px 7px #0C070B)
+}
