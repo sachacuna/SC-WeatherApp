@@ -21,11 +21,11 @@ export default function Ciudad({ city }) {
           <h4><b>Visibility</b>: {city.visibility/100}%</h4>
         </div>
         <div> 
-          <h4><b>Sunrise</b>: {`${sunrise.getHours()}:${sunrise.getMinutes()} h`}{" "}
+          <h4><b>Sunrise</b>: {`${sunrise.getHours()}:${(sunrise.getMinutes()<10)? "0"+sunrise.getMinutes() : sunrise.getMinutes()} h`}{" "}
           UTC</h4>
         </div>
         <div>
-          <h4><b>Sunset</b>: {`${sunset.getHours()}:${sunset.getMinutes()} h`} UTC</h4>
+          <h4><b>Sunset</b>: {`${sunset.getHours()}:${(sunset.getMinutes()<10)? "0"+sunset.getMinutes() : sunset.getMinutes()} h`} UTC</h4>
         </div>
         <div>
               <img
