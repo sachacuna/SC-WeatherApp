@@ -10,3 +10,9 @@
 p {
     font-weight: 600;
 }
+
+.card {
+  justify-content: center !important; 
+  margin: auto;
+  margin-top: 5%;
+}

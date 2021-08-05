@@ -6,6 +6,7 @@
   border-radius: 2%;
   box-shadow: 0px 31px 35px -26px #080c21;
   font-family: 'Roboto', sans-serif;
+  opacity: 0.80
 }
 
 .iconoClima {
@@ -22,11 +23,16 @@
   text-align: left;
 }
 
+.card-title:hover{
+  text-decoration: none;
+  color:#244b1c;
+}
+
 
 #closeIcon {
   display: flex;
   justify-content: flex-end;
-  margin-right: -8%;
+  margin-right: -8.5%;
   margin-top: -29%;
 }
 
@@ -36,8 +42,6 @@
 }
 
 .temp {
-  font-size: 100px;
+  font-size: 80px;
   margin-left: 15%;
-  
-
 }

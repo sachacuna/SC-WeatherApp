@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 
 export default function Card({ min, max, temp, name, img, onClose, id }) {
   return (
-    <div className="card">
-      <div className="card-body">
+    <div className="card" >
+      <div className="card-body" >
         <Link to={`/ciudad/${id}`}>
           <h5 className="card-title">
             <b>{name}</b>
           </h5>
         </Link>
         <div id="closeIcon" className="row">
-        <button onClick={onClose} className="btn btn-sm btn-danger">
-          x
-        </button>
-      </div>
+          <button onClick={onClose} className="btn btn-sm btn-danger">
+            x
+          </button>
+        </div>
         <div className="row">
           <div className="col-sm-4 col-md-4 col-lg-4">
             <img
