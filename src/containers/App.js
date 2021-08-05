@@ -48,13 +48,13 @@ function App() {
             } else {
               swal("Sorry, we couldn't find this city. Try again",{
                 buttons: false,
-                timer: 1500,
+                timer: 3000,
               });
             }
           } else {
             swal("This city is already added, try another", {
               buttons: false,
-              timer: 1500,
+              timer: 3000,
             });
           }
         } else {
