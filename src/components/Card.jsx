@@ -13,7 +13,7 @@ export default function Card({ min, max, temp, name, img, onClose, id }) {
         </Link>
         <div id="closeIcon" className="row">
           <button onClick={onClose} className="btn btn-sm btn-danger">
-            x
+            <b>X</b>
           </button>
         </div>
         <div className="row">
