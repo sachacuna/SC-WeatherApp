@@ -6,7 +6,7 @@ export default function Card({ min, max, temp, name, img, onClose, id }) {
   return (
     <div className="card" >
       <div className="card-body" >
-        <Link to={`/ciudad/${id}`}>
+        <Link to={`/ciudad/${id}`} className="card-title">
           <h5 className="card-title">
             <b>{name}</b>
           </h5>
