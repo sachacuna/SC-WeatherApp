@@ -1,11 +1,5 @@
 import React from "react";
 import "./About.css";
-import {SiReact} from "react-icons/si"
-import {SiBootstrap} from "react-icons/si"
-import {SiCss3} from "react-icons/si"
-import {SiHtml5} from "react-icons/si"
-
-
 
 export default function About() {
   return (
@@ -13,14 +7,6 @@ export default function About() {
       <div className="card" >
         <div className="card-body" >
           <p className="card-tittle">This web was made by Sacha Cuña</p>
-          <p> Using the followings technologies:
-          <div>
-              <SiReact/>
-              <SiBootstrap/>
-              <SiCss3/>
-              <SiHtml5/>
-          </div>
-          </p>
           <p>
             Plese, feel free to reach me in{" "}
             <a

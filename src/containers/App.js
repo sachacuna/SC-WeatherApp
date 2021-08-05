@@ -7,8 +7,10 @@ import Ciudad from "../components/Ciudad.jsx";
 //import Footer from "../components/Footer";
 import { Route } from "react-router-dom";
 import swal from "sweetalert";
+import dotenv from "dotenv"
+dotenv.config()
 
-const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
+const apiKey = process.env.REACT_APP_APIKEY;
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -17,7 +19,7 @@ function App() {
   }
   function onSearch(ciudad) {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`
     )
       .then((r) => r.json())
       .then((recurso) => {

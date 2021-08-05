@@ -1,12 +1,12 @@
 .card {
-  margin: 20px;
   width: 18rem;
-  background: rgb(180, 180, 180);
+  background: rgb(173, 173, 173);
   border: none;
   border-radius: 1%;
   box-shadow: 0px 31px 35px -26px #080c21;
   font-family: 'Roboto', sans-serif;
-  opacity: 0.80
+  opacity: 0.85;
+  margin: auto;
 }
 
 .iconoClima {
@@ -38,6 +38,7 @@
 .card-body {
   margin-top: 0px !important;
   padding-top: 0px !important;
+  padding-bottom: 1%;
 }
 
 .temp {
