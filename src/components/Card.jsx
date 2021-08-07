@@ -2,10 +2,20 @@ import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-export default function Card({ min, max, temp, name, img, onClose, id }) {
+export default function Card({
+  min,
+  max,
+  temp,
+  name,
+  img,
+  weather,
+  onClose,
+  id,
+}) {
+  console.log("TITULO CLG WEATHER", weather)
   return (
-    <div className="card" >
-      <div className="card-body" >
+    <div className="card">
+      <div className="card-body">
         <Link to={`/ciudad/${id}`} className="card-title">
           <h5 className="card-title">
             <b>{name}</b>
@@ -29,13 +39,15 @@ export default function Card({ min, max, temp, name, img, onClose, id }) {
           <div className="temp">
             <b>{Math.round(temp - 273.15)}°</b>
           </div>
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <p>Min</p>
-            <p>{Math.round(min - 273.15)}°</p>
+          <div className='box'>
+          <div className="minBox">
+            <p className="minMax">Min</p>
+            <p className="minMax">{Math.round(min - 273.15)}°</p>
           </div>
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <p>Max</p>
-            <p>{Math.round(max - 273.15)}°</p>
+          <div className="maxBox">
+            <p className="minMax">Max</p>
+            <p className="minMax">{Math.round(max - 273.15)}°</p>
+          </div>
           </div>
         </div>
       </div>

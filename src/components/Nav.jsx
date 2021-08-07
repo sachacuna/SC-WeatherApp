@@ -16,7 +16,7 @@ function Nav({ onSearch }) {
           className="d-inline-block align-top"
           alt="SC logo"
         />
-        <span className="navbar-brand">
+        <span className="navbar-brand" id='check'>
           <b>CHECK THE WEATHER</b>
         </span>
       </Link>

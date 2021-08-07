@@ -6,3 +6,9 @@
   text-align: center;
   margin: 0 auto;
 }
+
+@media (max-width: 577px) {
+
+#check{
+display: none;
+}}

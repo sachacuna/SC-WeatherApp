@@ -1,47 +1,117 @@
-.card {
-  width: 18rem;
-  background: rgb(173, 173, 173);
-  border: none;
-  border-radius: 1%;
-  box-shadow: 0px 31px 35px -26px #080c21;
-  font-family: 'Roboto', sans-serif;
-  opacity: 0.85;
-  margin: auto;
+@media (min-width: 575px) {
+  .card {
+    width: 18rem;
+    background: rgb(173, 173, 173);
+    border: none;
+    border-radius: 1%;
+    box-shadow: 0px 31px 35px -26px #080c21;
+    font-family: "Roboto", sans-serif;
+    opacity: 0.85;
+    margin: auto;
+  }
+
+  .iconoClima {
+    margin-top: 35%;
+    margin-left: -5%;
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 35px;
+    color: rgb(48, 97, 33);
+    text-decoration: none rgb(48, 97, 33);
+    text-align: left;
+  }
+
+  .card-title:hover {
+    text-decoration: none;
+  }
+
+  #closeIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -7%;
+    margin-top: -28%;
+  }
+
+  .card-body {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 1%;
+  }
+
+  .temp {
+    font-size: 80px;
+    margin-left: 15%;
+  }
+  .box {
+    display: flex;
+  }
+  .minBox{
+    margin-right: 20%;
+  }
+  .mixBox{
+    margin-left: 20%;
+  }
+
+  
 }
 
-.iconoClima {
-  margin-top: 35%;
-  margin-left: -5%;
-}
+@media (max-width: 577px) {
+  .card {
+    width: 18rem;
+    background: rgb(173, 173, 173);
+    border: none;
+    border-radius: 1%;
+    box-shadow: 0px 31px 35px -26px #080c21;
+    font-family: "Roboto", sans-serif;
+    opacity: 0.85;
+    margin: auto;
+  }
+  .card-title {
+    font-size: 35px;
+    color: rgb(48, 97, 33);
+    text-decoration: none rgb(48, 97, 33);
+    text-align: left;
+    margin-top: 0%;
+  }
+  #closeIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -6.5%;
+    margin-top: -20%;
+  }
+  .temp {
+    font-size: 80px;
+    margin-left: -0%;
+    margin-top: -40%;
+    height: 45%;
+  }
+  .iconoClima {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-.card-title {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  font-size: 35px;
-  color: rgb(48, 97, 33);
-  text-decoration: none rgb(48, 97, 33);
-  text-align: left;
-}
+  .card-body {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 1%;
+  }
 
-.card-title:hover{
-  text-decoration: none;
-}
+  .box {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -50%;
+      }
+  .maxBox {
+    margin-left: 20%;
+  }
+  .minBox{
+    margin-left: 0%;
+  }
 
-
-#closeIcon {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: -7%;
-  margin-top: -28%;
-}
-
-.card-body {
-  margin-top: 0px !important;
-  padding-top: 0px !important;
-  padding-bottom: 1%;
-}
-
-.temp {
-  font-size: 80px;
-  margin-left: 15%;
+  .mobileTitle {
+    display: none
+  }
 }

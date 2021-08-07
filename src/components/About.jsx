@@ -22,19 +22,19 @@ export default function About() {
               rel="noopener noreferrer"
               target="_blank"
               >
-              Github
+              Github.
             </a>
           </p>
                 <p>
             The GitHub repository is available{" "}
             <a href="https://github.com/sachacuna/SC-WeatherApp" rel="noopener noreferrer" target="_blank">
-              here
+              here.
             </a>
                 </p>
           <p>
             If you want check my resume you can find it{" "}
-            <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">
-              here
+            <a href="https://drive.google.com/file/d/1Z46NOgdbdzibCjB4yB4j7S_lX9lGhaLB/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+              here.
             </a>{" "}
           </p>
         </div>
